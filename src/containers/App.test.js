@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { App } from './App';
 import { contacts } from '../data/fixtures';
 
-const props = { contacts };
+const props = { contacts, results: contacts };
 
 describe('App', () => {
   const app = shallow(<App {...props} />);

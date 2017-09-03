@@ -1,20 +1,20 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Card from './Card';
+import ListItem from './ListItem';
 
 const props = {
-  name: 'John Smith',
-  phone: '1-770-736-8031 x56442'
+  left: 'John Smith',
+  right: '1-770-736-8031 x56442'
 };
 
-describe('Card', () => {
-  const card = shallow(<Card {...props} />);
+describe('ListItem', () => {
+  const card = shallow(<ListItem {...props} />);
 
-  it('renders the contact name', () => {
-    expect(card.find('.name h4').text()).toEqual(props.name);
+  it('renders the left value', () => {
+    expect(card.find('.name h4').text()).toEqual(props.left);
   });
 
-  it('renders the contact number', () => {
-    expect(card.find('.phone h4').text()).toEqual(props.phone);
+  it('renders the right value', () => {
+    expect(card.find('.phone h4').text()).toEqual(props.right);
   });
 });

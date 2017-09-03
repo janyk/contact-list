@@ -5,7 +5,6 @@ import Nav from '../components/Navigation'
 export class Contact extends Component {
   render() {
     const contact = this.props.contact
-    console.log(contact)
     return (
       <div>
         <Nav />

@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Navigation'
-
 import ListItem from '../components/ListItem';
-
-import ContactActions from '../redux/ContactRedux'
 
 export class AlphabetCount extends Component {
   render() {
@@ -24,7 +21,6 @@ export class AlphabetCount extends Component {
         <div className='alphabet-list-header'>
           <h1>Alphabetic Contact Count</h1>
         </div>
-        <br />
         <hr />
           {
             Object.keys(alphaCount).map(function(key) {

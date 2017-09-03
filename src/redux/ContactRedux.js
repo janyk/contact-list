@@ -5,7 +5,6 @@ import Immutable from 'seamless-immutable'
 
 const { Types, Creators } = createActions({
   searchContacts: ['searchTerm'],
-  cancelSearch: null,
   setContacts: ['contacts'],
   selectContact: ['contact'],
 

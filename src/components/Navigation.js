@@ -6,7 +6,7 @@ export class Navigation extends Component {
   render() {
     return (
       <div className="menu">
-        <DropdownButton pullRight title={"Menu"} id='dropdown-menu'>
+        <DropdownButton title={"Menu"} id='dropdown-menu'>
           <MenuItem><Link to='/'>Contact List</Link></MenuItem>
           <MenuItem><Link to='/alphabet-count'>Alphabet Count</Link></MenuItem>
         </DropdownButton>

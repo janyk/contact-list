@@ -4,7 +4,6 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import rootReducer from './redux';
-import Nav from './components/Navigation'
 import App from './containers/App'
 import Contact from './containers/Contact'
 import AlphabetCount from './containers/AlphabetCount'
