@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import { FormControl } from 'react-bootstrap';
+import Nav from '../components/Navigation'
+import ListItem from '../components/ListItem';
 
-import ListItem from './ListItem';
 import ContactActions from '../redux/ContactRedux'
 
 export class App extends Component {
@@ -29,6 +30,7 @@ export class App extends Component {
   render() {
     return (
       <div>
+        <Nav />
         <div className='contact-list-header'>
           <h1>Contact List</h1>
               <FormControl
@@ -44,7 +46,7 @@ export class App extends Component {
                 to='/contact'
                 onClick={() => this.props.selectContact(contact)}
               >
-                <ListItem {...contact}/>
+                <ListItem left={contact.name} right={contact.phone}/>
               </Link>
             )
           })

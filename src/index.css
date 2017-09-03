@@ -7,6 +7,53 @@ hr {
   margin-top: 0;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.menu li {
+  float: left;
+  margin-right: 1px;
+  background-color:
+}
+
+/*Style for menu links*/
+.menu li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+.menu li:hover a {
+    background: #19c589;
+}
+/*Style for dropdown links*/
+.menu li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+.menu li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+
 .form-control {
   margin-bottom: -1em;
 }
@@ -22,6 +69,13 @@ hr {
   text-align: left;
   width: 100%;
 }
+
+.alphabet-list-header h1 {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+
 
 .list-item {
   border: 1px solid lightgray;
@@ -45,6 +99,7 @@ hr {
 }
 
 .container {
+  padding-top: 10vmin;
   position: relative;
   width: 75vmin;
   height: 40vmin;

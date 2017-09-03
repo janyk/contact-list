@@ -4,8 +4,10 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import rootReducer from './redux';
-import App from './components/App'
-import Contact from './components/Contact'
+import Nav from './components/Navigation'
+import App from './containers/App'
+import Contact from './containers/Contact'
+import AlphabetCount from './containers/AlphabetCount'
 import './index.css';
 
 const store = createStore(rootReducer);
@@ -16,6 +18,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path='/' component={App} />
         <Route exact path='/contact' component={Contact} />
+        <Route path='/alphabet-count' component={AlphabetCount} />
       </Switch>
     </BrowserRouter>
   </Provider>,
