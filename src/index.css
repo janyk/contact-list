@@ -3,6 +3,26 @@ body {
   text-align: center;
 }
 
+hr {
+  margin-top: 0;
+}
+
+.form-control {
+  margin-bottom: -1em;
+}
+
+.contact-list-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contact-list-header h1 {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
 .list-item {
   border: 1px solid lightgray;
   border-radius: 5px;
