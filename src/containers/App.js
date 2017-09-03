@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FormControl } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 import Nav from '../components/Navigation'
 import ListItem from '../components/ListItem';
 
@@ -68,5 +69,9 @@ function mapDispatchToProps(dispatch) {
     selectContact: (contact) => dispatch(ContactActions.selectContact(contact)),
     searchContacts: (searchTerm) => dispatch(ContactActions.searchContacts(searchTerm))
   }
+}
+
+App.propTypes = {
+  results: PropTypes.array
 }
 export default connect(mapStateToProps, mapDispatchToProps)(App);
