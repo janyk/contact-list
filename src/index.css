@@ -1,0 +1,76 @@
+body {
+  padding: 5%;
+  text-align: center;
+}
+
+.list-item {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.name {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+}
+
+.phone {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+}
+
+.container {
+  position: relative;
+  width: 75vmin;
+  height: 40vmin;
+  perspective: 200vmin;
+}
+
+.card {
+  cursor: default;
+  position: absolute;
+  overflow: hidden;
+  width: 75vmin;
+  height: 40vmin;
+  color: white;
+  background: #263238;
+  border-radius: 500px 5vmin 5vmin 500px;
+  display: flex;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+}
+
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+h4 {
+  border-bottom: 1px solid #FFF;
+}
+
+.details {
+  text-align: left;
+  width: 60%;
+}
+
+.text {
+  padding: 2vmin 6.5vmin 2vmin 2vmin;
+}
+
+.tagLine {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
