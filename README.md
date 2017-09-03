@@ -2,10 +2,10 @@ Contact List Web App, made using React and Redux :)
 
 At the latest revision of the app:
 
-#Shows a list of contacts retrieved from http://jsonplaceholder.typicode.com/users
-#Navigates to a users business card when clicked on
-#Has search functionality on this list
-#Has a page that shows how many contacts there are that start with each letter of the alphabet
+- Shows a list of contacts retrieved from http://jsonplaceholder.typicode.com/users
+- Navigates to a users business card when clicked on
+- Has search functionality on this list
+- Has a page that shows how many contacts there are that start with each letter of the alphabet
 
 
 ## Running Contact List Web App
